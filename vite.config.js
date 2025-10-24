@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 //  "homepage": "https://noorullah-riu.github.io/Portflio_ReactJS/",
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: '/Portflio_ReactJS', // Add this line
 })
