@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Routes>
         {/* Default route */}
-        <Route path="/Portflio_ReactJS" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/ProjectDetail" element={<ProjectDetail />} />
 
       </Routes>
