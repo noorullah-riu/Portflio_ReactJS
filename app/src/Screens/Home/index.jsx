@@ -85,7 +85,7 @@ export default function Home() {
             src="./src/assets/profile-image.svg"
             alt=""
           />
-          <h1>Hi I'm Noor Ullah</h1>
+          <h1>Hi I'm Noor Ullah ah</h1>
 
           <div className="content-text">
             <h2>Building Mobile App </h2>
