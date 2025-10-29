@@ -81,7 +81,7 @@ export default function Home() {
         src={pi}
         alt=""
       />
-      <h1>Hi I'm Noor Ullah  test</h1>
+      <h1>Hi I'm Noor Ullah here</h1>
 
       <div className="content-text">
         <h2>Building Mobile App </h2>
