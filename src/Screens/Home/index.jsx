@@ -5,6 +5,12 @@ import project2 from '../../assets/project/SalesApp/SAPBusinessoneApp1.jpg';
 import project3 from '../../assets/project/SolarPanel/solarpanel3.jpg';
 import project4 from '../../assets/project/SolarPanel/solarpanel4.jpg';
 
+import PI from '../../assets/profile-image.svg'
+import gh from '../../assets/github-icon.svg'
+import li from '../../assets/linkedin-icon.svg'
+
+import NavBar from '../../components/Navbar';
+
 export default function Home() {
   const [count, setCount] = useState(0)
 
@@ -77,46 +83,12 @@ export default function Home() {
   return (
     <body>
       <header id="hero">
-        <nav className="navbar">
-          <div className="container">
-
-            <h1 id="logo">
-              <a href="https://github.com/CommunityPro/portfolio-html"
-              ><img src="./src/assets/logo.png" alt="Your Logo"
-                /></a>
-            </h1>
-            <ul className="nav-menu">
-              <li><a className="nav-link" href="#projects">PROJECTS</a></li>
-              <li><a className="nav-link" href="#">CONTACT</a></li>
-              {/* <li><a className="nav-link" href="#">BlOG</a></li> */}
-              <li>
-                <a
-                  className="nav-link btn btn-primary"
-                  href="https://github.com/CommunityPro/portfolio-html"
-                >RESUME <i className="fas fa-arrow-right"></i
-                ></a>
-              </li>
-
-              <div className="theme-switch">
-                <input type="checkbox" id="switch" />
-                <label className="toggle-icons" for="switch">
-                  <img className="moon" src="./src/assets/moon.svg" />
-                  <img className="sun" src="./src/assets/sun.svg" />
-                </label>
-              </div>
-            </ul>
-            <div className="hamburger">
-              <span className="bar"></span>
-              <span className="bar"></span>
-              <span className="bar"></span>
-            </div>
-          </div>
-        </nav>
+        <NavBar />
 
         <section className="header-container">
           <img
             className="profile-image"
-            src="./src/assets/profile-image.svg"
+            src={PI}
             alt=""
           />
           <h1>Hi I'm Noor Ullah</h1>
@@ -152,7 +124,7 @@ export default function Home() {
               <div className="project-info">
                 <h3 className="project-name">{product.name}</h3>
                 <p className="project-desc">{product.description}</p>
-                <p classNName="project-company">{product.company}</p>
+                <p className="project-company">{product.company}</p>
               </div>
             </div>
           ))}
@@ -173,9 +145,9 @@ export default function Home() {
           /></a> */}
             {/* <a href="#" target="_blank"><img src="./src/assets/twitter-icon.svg" alt="Twitter" /></a> */}
             <a href="#" target="_blank"
-            ><img src="./src/assets/linkedin-icon.svg" alt="Linkedin"
+            ><img src={li} alt="Linkedin"
               /></a>
-            <a href="#" target="_blank"><img src="./src/assets/github-icon.svg" alt="GitHub" /></a>
+            <a href="#" target="_blank"><img src={gh} alt="GitHub" /></a>
             {/* <a href="#" target="_blank"
             ><img src="./src/assets/hashnode-icon.svg" alt="Hashnode"
           /></a> */}
@@ -184,6 +156,7 @@ export default function Home() {
           <p>Copyright &copy; Communitypro <span id="datee"></span>, All rights reserved</p>
         </div>
       </footer>
+
       <script src="./src/js/script.js"></script>
     </body>
   )
